@@ -14,6 +14,8 @@ var box = {
 //
 //
 // };
+
+
 var arr_values = [];
 var one_box = box;
 var box_X = one_box.boxPixel_X;

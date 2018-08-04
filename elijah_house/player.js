@@ -2,6 +2,16 @@
 var canvas = document.getElementById('testArea');
 var ctx = canvas.getContext("2d");
 
+// var img = new Image();
+//
+// img.src = "./images/elijah_spritesheet2.png";
+
+// function drawSprite(frameX, frameY, canvasX, canvasX){
+//   ctx.drawImage(img,
+//                 frameX * width, frameY * height, width, height,
+//                 canvasX, canvasY, scaledWidth, scaledHeight);
+//
+// }
 //
 var player = {
   xpos : 0,
@@ -11,11 +21,15 @@ var player = {
 var x_pos = player.xpos;
 var y_pos = player.ypos;
 
-function hi (){
-  alert("hi");
-  ctx.fillStyle = "#0ff";
-  ctx.fillRect(x_pos,y_pos,32,32);
-}
+
+ctx.fillStyle = "#0ff";
+ctx.fillRect(x_pos,y_pos,32,32);
+
+// function hi (){
+//   alert("hi");
+//   ctx.fillStyle = "#0ff";
+//   ctx.fillRect(x_pos,y_pos,32,32);
+// }
 //maybe add a cooldown for my movement
 function move(e){
   console.log(e.keyCode);
@@ -42,10 +56,9 @@ function move(e){
   }
   // ctx.fillStyle = "#0ff";
   ctx.fillRect(x_pos,y_pos,32,32);
-
   // ctx.stroke();
 }
-hi();
+//hi();
 document.onkeydown = move;
 //
 //

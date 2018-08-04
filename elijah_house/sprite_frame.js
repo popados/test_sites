@@ -1,12 +1,12 @@
 let img = new Image();
 
-img. src = "./images/elijah_spritesheet2.png";
+img.src = "./images/elijah_spritesheet2.png";
 img.onload = function() {
   init();
 
 }
 
-let canvas = document.querySelector('canvas');
+let canvas = document.getElementById('canvas');
 let ctx = canvas.getContext('2d');
 
 const scale = 2;
@@ -20,6 +20,7 @@ function drawFrame(frameX, frameY, canvasX, canvasY) {
   ctx.drawImage(img,
                 frameX * width, frameY * height, width, height,
                 canvasX, canvasY, scaledWidth, scaledHeight);
+
 }
 
 function init() {
