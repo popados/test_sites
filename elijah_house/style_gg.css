@@ -1,6 +1,6 @@
 header{
-  background: #fff;
-  color: #fff;
+  background: #003333;
+  color: #003333;
   max-width: 1920px;
   align-content: center;
   min-width: 1020px;
@@ -24,7 +24,7 @@ ul{
   position:relative;
   list-style-type: none;
   overflow: hidden;
-  background-color: #fff;
+  background-color: #0FF;
   margin: 0px;
   padding: 0px;
   border-bottom: black 2px solid;
@@ -53,8 +53,8 @@ li{
   overflow:hidden;
 }
 body{
-  background: #fff;
-  color: #fff;
+  background: #003333;
+  color: #003333;
   max-width: 1920px;
   align-content: center;
   min-width: 1020px;

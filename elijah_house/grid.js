@@ -47,13 +47,13 @@ function drawRow(y_value){
 }
 // draws the rest of the rows with new y values
 function drawEachRow(){
-  for (y_value = 0; y_value <=720; y_value+=32){
+  for (y_value = 0; y_value <=800; y_value+=32){
 
     drawRow(y_value);
   }
 }
 
-console.log(array_values);
+//console.log(array_values);
 drawEachRow();
 
 // var player = {

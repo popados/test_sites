@@ -1,0 +1,73 @@
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title> GG We Lose | Combat Test </title>
+</head>
+<body>
+  <div>
+    <a href="file:///C:/Users/Nik/Desktop/old_docs/website_tests/elijah_house/house.html">player movenet</a>
+    <a href="file:///C:/Users/Nik/Desktop/old_docs/website_tests/elijah_house/texture_atlas.html">texture pack</a>
+    <a href="file:///C:/Users/Nik/Desktop/old_docs/website_tests/elijah_house/turn_based_combat/combat.html">combat test</a>
+  </div>
+  <div>
+    <p>This is the combat test </p>
+  </div>
+  <div>
+    <p id='hp'> This is your hp: <span id='player-hp'> </span>  </p>
+  </div>
+  <div>
+    <p> This is enemy hp: <span id='enemy-hp'> </span> </p>
+  </div>
+  <div>
+    <button id = "hit" onClick ="attack()" > Attack!! </button>
+    <button id = "heal" onClick ="heal()"> Heal!! </button>
+  </div>
+  <canvas></canvas>
+  <script>
+
+    const player = {
+      health: 100,
+      power: 20,
+      heal: 10,
+
+    };
+
+    const enemy = {
+      health: 100,
+      power: 20,
+      heal: 10,
+    };
+
+
+    function showStats() {
+      //console.log(player.health);
+      document.getElementById('player-hp').innerHTML = player.health;
+      document.getElementById('enemy-hp').innerHTML = enemy.health;
+
+    }
+    showStats();
+
+    function heal(){
+      let healAmount = Math.floor(Math.random() * player.heal);
+      let enemyCurrent = enemy.health +=healAmount;
+      showStats();
+
+    }
+
+    function attack() {
+      let playerAttack = Math.floor(Math.random() * player.power);
+      enemyCurrent = enemy.health -= playerAttack;
+      console.log(enemyCurrent);
+      console.log(Math.random());
+      if (enemy.health <= 0){
+        alert('Game ended');
+      }
+      showStats();
+    }
+
+
+
+  </script>
+
+</body>
+</html>

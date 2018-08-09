@@ -6,8 +6,8 @@ img.onload = function() {
 
 }
 
-let canvas = document.getElementById('canvas');
-let ctx = canvas.getContext('2d');
+let canvas1 = document.getElementById('canvas');
+let ctx = canvas1.getContext('2d');
 
 const scale = 2;
 

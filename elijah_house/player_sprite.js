@@ -102,7 +102,6 @@ function move(e){
   }
 }
 
-document.onkey
 
 
 
